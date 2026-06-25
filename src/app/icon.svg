@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ear Piercing Chart icon">
+  <rect width="512" height="512" rx="112" fill="#100c0d"/>
+  <path d="M312 78c-71 0-127 58-127 132 0 38 13 66 42 99 19 22 28 43 28 66 0 29-19 54-48 54-28 0-47-20-47-48" fill="none" stroke="#e7bd80" stroke-width="34" stroke-linecap="round"/>
+  <path d="M307 154c-35 0-63 28-63 65 0 23 9 38 28 59 15 17 24 37 24 59 0 50-35 90-84 90" fill="none" stroke="#f6da9f" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="336" cy="166" r="22" fill="#79c0ac"/>
+  <circle cx="360" cy="235" r="18" fill="#e58a6b"/>
+  <circle cx="304" cy="318" r="16" fill="#c8a6ec"/>
+</svg>
