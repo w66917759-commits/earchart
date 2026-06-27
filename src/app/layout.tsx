@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import Script from "next/script";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
@@ -87,9 +88,22 @@ export const viewport: Viewport = {
   themeColor: siteConfig.themeColor,
 };
 
+const googleTagId = "G-BPV2B8EX0X";
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
+      <head>
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${googleTagId}`} />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleTagId}');
+          `}
+        </Script>
+      </head>
       <body>
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         {children}
