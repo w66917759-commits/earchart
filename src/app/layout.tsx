@@ -29,7 +29,7 @@ const sans = Inter({
 const rootMetadata = pageMetadata({
   title: "Ear Piercing Chart: Pain, Healing Time, Placement & Jewelry Guide",
   description: siteConfig.description,
-  path: "/ear-piercing-chart/",
+  path: "/",
   type: "website",
   keywords: [
     "ear piercing placement chart",

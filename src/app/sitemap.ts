@@ -4,7 +4,7 @@ import { piercings } from "@/lib/piercings";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const staticRoutes = [
-  { path: "/ear-piercing-chart/", changeFrequency: "weekly" as const, priority: 1 },
+  { path: "/", changeFrequency: "weekly" as const, priority: 1 },
   { path: "/ear-piercing-pain-chart/", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/ear-piercing-healing-time-chart/", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/ear-piercing-names/", changeFrequency: "monthly" as const, priority: 0.72 },

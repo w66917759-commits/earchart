@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
@@ -12,9 +13,9 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer-inner">
         <div className="site-footer-brand">
-          <a className="site-wordmark" href="/ear-piercing-chart/">
+          <Link className="site-wordmark" href="/">
             {siteConfig.name}
-          </a>
+          </Link>
           <p>
             Independent ear piercing placement, pain, healing, jewelry, and aftercare
             reference. Educational only, not medical advice.

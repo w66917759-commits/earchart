@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -11,16 +12,16 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main className="simple-page">
-      <a className="site-wordmark" href="/ear-piercing-chart/">
+      <Link className="site-wordmark" href="/">
         Ear Piercing Chart
-      </a>
+      </Link>
       <section className="guide-hero compact">
         <p className="eyebrow">404</p>
         <h1>Page not found</h1>
         <p>The interactive chart and current guides are available from the main tool.</p>
-        <a className="primary-button" href="/ear-piercing-chart/">
+        <Link className="primary-button" href="/">
           Open the chart
-        </a>
+        </Link>
       </section>
     </main>
   );

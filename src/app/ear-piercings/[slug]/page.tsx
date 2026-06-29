@@ -77,7 +77,7 @@ function piercingJsonLd(piercing: Piercing) {
     }),
     faqPageJsonLd(piercingFaqs(piercing)),
     breadcrumbJsonLd([
-      { name: "Ear Piercing Chart", path: "/ear-piercing-chart/" },
+      { name: "Ear Piercing Chart", path: "/" },
       { name: piercing.name, path: `/ear-piercings/${piercing.slug}/` },
     ]),
   ];

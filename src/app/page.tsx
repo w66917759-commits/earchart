@@ -1,15 +1,29 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+import {
+  chartPageDescription,
+  chartPageTitle,
+  EarPiercingChartPage,
+} from "@/components/EarPiercingChartPage";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Ear Piercing Chart: Pain, Healing Time, Placement & Jewelry Guide",
-  description:
-    "Use an interactive ear piercing chart to compare placement names, pain levels, healing time, starter jewelry, anatomy fit, and aftercare basics.",
-  path: "/ear-piercing-chart/",
-  type: "website",
-});
+export const metadata: Metadata = {
+  ...pageMetadata({
+    title: chartPageTitle,
+    description: chartPageDescription,
+    path: "/",
+    type: "website",
+    keywords: [
+      "interactive ear piercing chart",
+      "ear piercing locations",
+      "ear piercing placement guide",
+      "ear piercing pain and healing chart",
+    ],
+  }),
+  title: {
+    absolute: chartPageTitle,
+  },
+};
 
 export default function HomePage() {
-  redirect("/ear-piercing-chart/");
+  return <EarPiercingChartPage />;
 }

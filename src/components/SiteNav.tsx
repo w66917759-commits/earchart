@@ -1,16 +1,18 @@
+import Link from "next/link";
+
 export function SiteNav() {
   return (
     <nav className="top-nav" aria-label="Primary navigation">
-      <a className="site-wordmark" href="/ear-piercing-chart/">
+      <Link className="site-wordmark" href="/">
         Ear Piercing Chart
-      </a>
+      </Link>
       <div className="top-nav-actions">
-        <a className="top-nav-guides" href="/ear-piercing-chart/#explore-guides">
+        <Link className="top-nav-guides" href="/#explore-guides">
           Guides
-        </a>
-        <a className="top-nav-start" href="/ear-piercing-chart/#ear-chart-workspace">
+        </Link>
+        <Link className="top-nav-start" href="/#ear-chart-workspace">
           Start Exploring
-        </a>
+        </Link>
       </div>
     </nav>
   );

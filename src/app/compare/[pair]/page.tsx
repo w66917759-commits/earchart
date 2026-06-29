@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { MiniEarMap } from "@/components/MiniEarMap";
@@ -78,7 +79,7 @@ function compareJsonLd(comparison: PiercingComparison) {
     }),
     faqPageJsonLd(comparisonFaqs(comparison)),
     breadcrumbJsonLd([
-      { name: "Ear Piercing Chart", path: "/ear-piercing-chart/" },
+      { name: "Ear Piercing Chart", path: "/" },
       { name: comparison.title, path: `/compare/${comparison.slug}/` },
     ]),
   ];
@@ -203,10 +204,10 @@ export default async function ComparePage({ params }: ComparePageProps) {
                 {right.name}
                 <span>{right.healing.display}</span>
               </a>
-              <a href="/ear-piercing-chart/">
+              <Link href="/">
                 Interactive chart
                 <span>All placements</span>
-              </a>
+              </Link>
             </div>
           </section>
           <SourceBox />
